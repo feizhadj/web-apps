@@ -1,7 +1,3 @@
 Rails.application.routes.draw do
-  resources "tacos"
-  resources "dice"
-  resources "cards"
-  resources "companies"
-  resources "contacts"
+  gets "/tacos", :controller => "tacos", :action => "index"
 end
